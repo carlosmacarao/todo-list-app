@@ -1,4 +1,5 @@
-import { StyleSheet, Text, View } from 'react-native';
+import React, {useState} from 'react';
+import { KeyboardAvoidingView, StyleSheet, Text, View, TextInput, TouchableOpacity, Keyboard, ScrollView } from 'react-native';
 import Task from './components/Task';
 
 export default function App() {
@@ -16,7 +17,7 @@ export default function App() {
     itemsCopy.splice(index, 1);
     setTaskItems(itemsCopy)
   }
-  
+
   return (
     <View style={styles.container}>
 
